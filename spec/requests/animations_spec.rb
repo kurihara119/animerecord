@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe 'Animations', type: :request do
-  let(:animations) { create_list(:animation, 20) }
+  let(:animations) { create_list(:animation, 13) }
 
   describe '#index' do
     before do
@@ -15,8 +15,12 @@ RSpec.describe 'Animations', type: :request do
     it '作品の情報を取得すること' do
       expect(response.body).to include(
         animations[0].animation_name,
-        animations[0].synopsis,
+        animations[0].synopsis
       )
+    end
+
+    it '作品の画像を取得すること' do
+      expect(response.body).to include('test.jpg')
     end
 
     it "作品を12件取得すること" do
@@ -42,6 +46,10 @@ RSpec.describe 'Animations', type: :request do
         animations[0].animation_name,
         animations[0].synopsis,
       )
+    end
+
+    it '作品の画像を取得すること' do
+      expect(response.body).to include('test.jpg')
     end
   end
 
