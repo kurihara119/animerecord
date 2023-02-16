@@ -11,17 +11,11 @@ RSpec.describe "Users", type: :system do
           it 'ユーザーの新規作成が成功' do
             # ユーザー新規登録画面へ遷移
             visit new_user_registration_path
-            # Emailテキストフィールドにtest2@example.comと入力
             fill_in 'user[email]', with: 'test2@example.com'
-            # Passwordテキストフィールドにpasswordと入力
             fill_in 'user[password]', with: 'password'
-            # Password confirmationテキストフィールドにpasswordと入力
             fill_in 'user[password_confirmation]', with: 'password'
-            # 新しいアカウントを作成するボタンをクリックする
             click_button '新しいアカウントを作成'
-            # root_pathへ遷移することを期待する
             expect(current_path).to eq root_path
-            # 遷移されたページに'アカウント登録が完了しました。'の文字列があることを期待する
             expect(page).to have_content 'アカウント登録が完了しました。'
           end
         end
@@ -66,7 +60,8 @@ RSpec.describe "Users", type: :system do
           it 'ユーザーの編集が成功' do
             # ユーザー編集画面へ遷移
             visit profile_users_path
-            fill_in 'user[username]', with: 'user'
+            attach_file 'user[profile_image]', "app/assets/images/log.jpeg"
+            fill_in 'user[username]', with: 'testuser'
             click_button '更新'
             expect(current_path).to eq root_path
           end
@@ -76,6 +71,7 @@ RSpec.describe "Users", type: :system do
           it 'ユーザーの編集が失敗' do
             # ユーザー編集画面へ遷移
             visit profile_users_path
+            attach_file 'user[profile_image]', "app/assets/images/log.jpeg"
             fill_in 'user[username]', with: 'testusertest'
             click_button '更新'
             expect(current_path).to eq user_path(user)
