@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.7.6'
+ruby '3.0.4'
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem 'rails', '~> 7.0.2', '>= 7.0.2.3'
@@ -56,6 +56,10 @@ group :development, :test do
   gem 'mini_magick'
   gem 'pry-rails'
   gem 'rails-i18n'
+  gem 'devise'
+  gem 'jquery-rails'
+  gem 'kaminari'
+  gem 'react-rails'
 end
 
 group :development do
@@ -73,6 +77,7 @@ group :development do
   gem 'rubocop-rails', require: false
   gem 'rubocop-rspec', require: false
   gem 'rails-erd'
+  gem 'webpacker', '~> 6.0.0.rc.6'
 end
 
 group :test do
@@ -85,6 +90,6 @@ group :test do
   gem 'faker'
 end
 
-gem 'devise'
-gem 'jquery-rails'
-gem 'kaminari'
+group :production do
+  gem 'unicorn', '4.4.0'
+end
