@@ -1,7 +1,5 @@
 class RecordsController < ApplicationController
   def index
-<<<<<<< HEAD
-=======
     @records = Record.all.where(user_id: current_user.id).includes(:user).order(created_at: :DESC)
     if params[:sort_name]
       @records = Record.all.where(user_id: current_user.id).includes(:user).nameorder
@@ -40,6 +38,5 @@ class RecordsController < ApplicationController
 
   def record_params
     params.permit(:record_animationname)
->>>>>>> 8bf9ce31b6b1c5fc3f56ffa59f5030f1b8a88e71
   end
 end
