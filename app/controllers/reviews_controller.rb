@@ -1,7 +1,7 @@
 class ReviewsController < ApplicationController
   def index
     @animation = Animation.find(params[:animation_id])
-    @reviews = @animation.reviews
+    @reviews = @animation.reviews.order(created_at: :desc).page(params[:page]).per(10)
     @user = current_user
   end
 
