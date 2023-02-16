@@ -32,7 +32,7 @@
       <% else %>
         <% @reviews.each do |review| %>
           <div class="col-3 col-md-2 col-xl-1 col-xxl-1 me-sm-2">
-            <%= image_tag review.user.profile_image.url, alt: "プロフィール画像", onclick:"js_event()", size: '80x80'%>
+            <%= image_tag review.user.profile_image.url, alt: "プロフィール画像", size: '80x80'%>
           </div>
           <div class="col-8 col-md-7 col-xxl-6 border mb-5 px-3 bg-white">
             <div class="border-bottom pt-2 pb-1"><%= review.user.username %></div>
@@ -52,5 +52,6 @@
         <% end %>
       <% end %>
     </div>
+    <%= paginate @reviews %>
   </div>
 </section>
