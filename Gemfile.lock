@@ -396,6 +396,7 @@ DEPENDENCIES
   rubocop-performance
   rubocop-rails
   rubocop-rspec
+  sassc (~> 2.4.0)
   sassc-rails (= 2.1.2)
   selenium-webdriver
   sprockets-rails
