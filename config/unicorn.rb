@@ -27,8 +27,6 @@ preload_app true
 
 GC.respond_to?(:copy_on_write_friendly=) && GC.copy_on_write_friendly = true
 
-check_client_connection false
-
 run_once = true
 
 before_fork do |server, worker|
