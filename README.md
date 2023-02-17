@@ -1,24 +1,35 @@
-# README
+## アニコミ(アプリ名)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+### 概要
+作品のレビューを投稿、今までに見た作品を記録できるアプリです。
 
-* Ruby version
+![image](https://user-images.githubusercontent.com/75924169/219640643-b2ff9b75-126d-4963-aad1-8c856cc68554.png)
 
-* System dependencies
 
-* Configuration
+### 機能
+・検索機能<br>
+・登録機能<br>
+・星評価レビュー機能<br>
+・表示順並び替え<br>
+・ページネーション機能<br>
 
-* Database creation
 
-* Database initialization
+### 環境
+rails 7.0.2.3<br>
+ruby 3.0.4<br>
+sqlite3 1.4<br>
+rspec<br>
+AWS<br>
+ ・ec2<br>
+ 
 
-* How to run the test suite
+### テスト
+rspec<br>
+ ・単体テスト(model)<br>
+ ・機能テスト(request)<br>
+ ・統合テスト(system)<br>
+ 
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### ER図
+![image](https://user-images.githubusercontent.com/75924169/219643061-df0f362d-f9a9-4a58-aafd-094336399d8e.png)
