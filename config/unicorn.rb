@@ -8,7 +8,7 @@ worker_processes 2
 working_directory root_path
 
 # プロセスIDの保存先を指定
-pid "#{root_path}/tmp/pids/unicorn.pid"
+pid "#{root_path}/shared/tmp/pids/unicorn.pid"
 
 # ポート番号を指定
 listen "#{root_path}/tmp/sockets/unicorn.sock"
