@@ -57,7 +57,6 @@ group :development, :test do
   gem 'pry-rails'
   gem 'rails-i18n'
   gem 'jquery-rails'
-  gem 'kaminari'
   gem 'react-rails'
   gem 'sqlite3', '~> 1.4'
 end
@@ -96,3 +95,4 @@ group :production do
 end
 
 gem 'devise'
+gem 'kaminari'
