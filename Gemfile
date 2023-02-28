@@ -56,7 +56,6 @@ group :development, :test do
   gem 'mini_magick'
   gem 'pry-rails'
   gem 'rails-i18n'
-  gem 'devise'
   gem 'jquery-rails'
   gem 'kaminari'
   gem 'react-rails'
@@ -95,3 +94,5 @@ group :production do
   gem 'unicorn', '4.4.0'
   gem 'pg'
 end
+
+gem 'devise'
