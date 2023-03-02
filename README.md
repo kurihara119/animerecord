@@ -20,8 +20,7 @@ rails 7.0.2.3<br>
 ruby 3.0.4<br>
 sqlite3 1.4<br>
 rspec<br>
-AWS<br>
- ・ec2<br>
+heroku<br>
  
 
 ### テスト
