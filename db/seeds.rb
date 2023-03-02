@@ -2,7 +2,7 @@ Animation.create!(
   [
     {
       animation_name: 'ONE PIECE ワンピース',
-      animation_image: File.open('./app/assets/images/onepiece.jpeg'),
+      animation_image: File.open('onepiece.jpeg'),
       synopsis: 'かつてこの世の全てを手に入れた伝説の海賊王ゴールド・ロジャーが遺した、「ひとつなぎの大秘宝（ワンピース）」をめぐり、幾人もの海賊が覇権を賭けて争う大海賊時代。そんな時代に生まれ、幼い頃の命の恩人である海賊赤髪のシャンクスに憧れる少年モンキー・D・ルフィは、「ゴムゴムの実」と呼ばれる不思議な実（「悪魔の実」の一種）を食べてゴム人間となり、泳げない体になりながらも海賊王を目指して仲間と共に冒険する。'
     },
     {
