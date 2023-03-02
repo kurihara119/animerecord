@@ -54,7 +54,6 @@ group :development, :test do
   gem 'debug', platforms: %i[mri mingw x64_mingw]
   gem 'mini_magick'
   gem 'pry-rails'
-  gem 'rails-i18n'
   gem 'jquery-rails'
   gem 'react-rails'
   gem 'sqlite3', '~> 1.4'
@@ -99,3 +98,4 @@ gem 'kaminari'
 gem 'carrierwave'
 gem 'aws-sdk-s3', require: false
 gem 'devise-i18n'
+gem 'rails-i18n'
