@@ -44,8 +44,11 @@
               <div class="ms-2"><%= review.score %>点</div>
             </div>
             <div class="py-2 review-text border-bottom"><%= safe_join(review.content.split("\n"),tag(:br)) %></div>
-            <div>
+            <div class="d-flex justify-content-between">
               <div class="review-text text-secondary"><%= review.created_at.strftime('%Y/%m/%d') %></div>
+              <% if user_signed_in? && current_user.id == review.user_id %>
+                <%= button_to '削除', "/animations/:#{@animation.id}/reviews/#{review.id}",method: :delete, class: "btn btn-danger btn-sm" %>
+              <% end %>
             </div>
           </div>
           <div class="w-100"></div>

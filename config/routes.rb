@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   root to: 'animations#index'
   resources :animations do
     get :search, on: :collection
-    resources :reviews, only: [:index, :new, :create]
+    resources :reviews, only: [:index, :new, :create, :destroy]
     get :username_flash_message, on: :collection
     get :session_flash_message, on: :collection
   end
