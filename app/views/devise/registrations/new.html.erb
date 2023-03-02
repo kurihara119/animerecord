@@ -6,7 +6,7 @@
         <%= render "devise/shared/error_messages", resource: resource %>
 
         <div class="field row align-items-center justify-content-center my-3">
-          <%= f.label :email, 'メールアドレス', class: "col-3 col-md-3 col-lg-2 ps-0 ps-md-5 ps-lg-0 col-form-label" %>
+          <%= f.label :email, 'メールアドレス', class: "col-4 pe-0 col-md-3 col-lg-2 ps-md-5 ps-lg-0 col-form-label" %>
           <div class="col-7 col-md-5 col-lg-4 email-form">
             <i class="icon fa-solid fa-envelope"></i>
             <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "メールアドレスを入力", class: "form-control form-control-dark ps-5" %>
@@ -14,7 +14,7 @@
         </div>
 
         <div class="field row align-items-center justify-content-center my-3">
-          <%= f.label :password, 'パスワード', class: "col-3 col-md-3 col-lg-2 ps-0 ps-md-5 ps-lg-0 col-form-label" %>
+          <%= f.label :password, 'パスワード', class: "col-4 pe-0 col-md-3 col-lg-2 ps-md-5 ps-lg-0 col-form-label" %>
           <div class="col-7 col-md-5 col-lg-4 password-form">
             <i class="icon fa-solid fa-lock"></i>
             <%= f.password_field :password, autocomplete: "new-password", placeholder: "パスワードを入力", class: "form-control form-control-dark ps-5" %>
@@ -22,7 +22,7 @@
         </div>
 
         <div class="field row align-items-center justify-content-center my-3">
-          <%= f.label :password_confirmation, 'パスワード(確認用)', class: "col-3 col-md-3 col-lg-2 ps-0 ps-md-5 ps-lg-0 col-form-label" %>
+          <%= f.label :password_confirmation, 'パスワード(確認用)', class: "col-4 pe-0 col-md-3 col-lg-2 ps-md-5 ps-lg-0 col-form-label" %>
           <div class="col-7 col-md-5 col-lg-4 password-form">
             <i class="icon fa-solid fa-lock"></i>
             <%= f.password_field :password_confirmation, autocomplete: "new-password", placeholder: "パスワード(確認用)を入力", class: "form-control form-control-dark ps-5" %>

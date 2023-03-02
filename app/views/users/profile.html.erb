@@ -8,13 +8,13 @@
         <%= form_with model: @user, local: true do |f| %>
           <% if current_user.email == 'guest@example.com' %>
             <div class="row align-items-center justify-content-center my-3">
-              <%= f.label :profile_image, "アイコン画像", class: "col-3 col-md-3 col-lg-2 ps-lg-5 ps-0 ps-md-5 ps-lg-0 col-form-label" %>
+              <%= f.label :profile_image, "アイコン画像", class: "col-4 pe-0 col-md-3 col-lg-2 ps-lg-5 ps-md-5 ps-lg-0 col-form-label" %>
               <div class="col-7 col-md-5 col-lg-3 email-form">
                 <%= f.text_field :profile_image, readonly: true, class: "form-control form-control-dark username-input" %>
               </div>
             </div>
             <div class="row align-items-center justify-content-center my-3">
-              <%= f.label :username, "名前", class: "col-3 col-md-3 col-lg-2 ps-lg-5 ps-0 ps-md-5 ps-lg-0 col-form-label" %>
+              <%= f.label :username, "名前", class: "col-4 pe-0 col-md-3 col-lg-2 ps-lg-5 ps-md-5 ps-lg-0 col-form-label" %>
               <div class="col-7 col-md-5 col-lg-3 email-form">
                 <%= f.text_field :username, readonly: true, class: "form-control form-control-dark username-input" %>
               </div>
