@@ -91,6 +91,7 @@ end
 group :production do
   gem 'unicorn', '4.4.0'
   gem 'pg'
+  gem 'fog-aws'
 end
 
 gem 'devise'
