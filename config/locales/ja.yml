@@ -148,6 +148,17 @@ ja:
       not_saved:
         one: エラーが発生したため %{resource} は保存されませんでした。
         other: "%{count} 件のエラーが発生したため %{resource} は保存されませんでした。"
+    models:
+        user:
+          attributes:
+            email:
+              blank: を入力してください。
+              taken: はすでに存在します。
+            password:
+              blank: を入力してください。
+              too_short: は6文字以上で入力してください。
+            password_confirmation:
+              confirmation: とパスワードの入力が一致しません。
   views:
     pagination:
       first: "&laquo; 最初"
